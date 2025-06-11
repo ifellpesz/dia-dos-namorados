@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parati.css">
+    <title>Para Você 💖</title>
+</head>
+<body>
+<div class="tela-inicial" id="tela-inicial">
+    <h2 style="color:#e91e63; font-size: 24px; margin-bottom: 20px;">
+    Oi Gi... Tenho algo pra te mostrar 💌
+    </h2>
+    <button onclick="mostrarMensagem()">Aperta aqui</button>
+</div>
+
+<div class="tela-mensagem" id="tela-mensagem">
+    <div class="card">
+    <h1>Feliz Dia dos Namorados!🥰</h1>
+    <p>
+        Eu fiz esse site só pra te dizer<br>
+        o quanto você é especial pra mim. 💕<br><br>
+        Quem sabe um dia<br>
+        a gente não escreve essa história juntos? 😊
+    </p>
+    </div>
+
+    <div class="hearts">
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 40%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 0.5s;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 2.5s;"></div>
+    </div>
+</div>
+
+<script>
+    function mostrarMensagem() {
+    document.getElementById('tela-inicial').style.opacity = '0';
+    setTimeout(() => {
+        document.getElementById('tela-inicial').style.display = 'none';
+        const msg = document.getElementById('tela-mensagem');
+        msg.style.opacity = '1';
+        msg.style.pointerEvents = 'auto';
+    }, 500);
+    }
+</script>
+</body>
+</html>
